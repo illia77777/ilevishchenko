@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirStore — Купити Чисте Повітря</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🌬️ AirStore</div>
+        <nav class="nav">
+            <a href="index.html" class="active">Головна</a>
+            <a href="facts.html">Факти</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contact.html">Контакти</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Дихай на повні легені</h1>
+        <p>100% натуральний альпійський повітряний концентрат у зручних балонах.</p>
+        <a href="#order" class="btn">Замовити ковток свободи</a>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <h3>🌱 0% домішок</h3>
+            <p>Жодного міського смогу чи пилу. Тільки чистий кисень та азот.</p>
+        </div>
+        <div class="feature-card">
+            <h3>⛰️ Прямо з Альп</h3>
+            <p>Збираємо повітря на висоті 3000 метрів вручну екологічними сачками.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔋 Ефект енергетика</h3>
+            <p>Один вдих покращує роботу мозку, пам'ять та настрій за 2 секунди.</p>
+        </div>
+    </section>
+    <section id="order" class="order-section">
+        <h2>Оформити доставку свіжості</h2>
+        <form class="order-form" onsubmit="alert('Дякуємо! Ваше повітря вже летить до вас!'); return false;">
+            <div class="form-group">
+                <label for="volume">Об'єм балона:</label>
+                <select id="volume" name="volume">
+                    <option value="1">1 Літр (Легкий бриз) — 299 грн</option>
+                    <option value="5">5 Літрів (Гірський шторм) — 999 грн</option>
+                    <option value="0">0 Літрів (Екстракт нічого) — Безкоштовно</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" placeholder="Іван Іванов" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон для зв'язку:</label>
+                <input type="tel" id="phone" placeholder="+380..." required>
+            </div>
+            <button type="submit" class="btn btn-submit">Придбати повітря</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>© 2026 AirStore. Продаємо те, що не можна помацати, але можна вдихнути.</p>
+    </footer>
+</body>
+</html>
